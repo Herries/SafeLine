@@ -43,8 +43,8 @@ const LINKS = [
 ];
 
 export const items = [
-  { to: "/community", label: "社区" },
-  { to: "/version", label: "版本对比" },
+  { to: "/community", label: "开发计划" },
+  { to: "/version", label: "付费版本" },
   { to: "", label: "用户协议" },
 ];
 

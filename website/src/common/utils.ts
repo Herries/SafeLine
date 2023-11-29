@@ -38,6 +38,13 @@ export function formatNumberWithCommas(v: number) {
   return v.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
 }
 
+export function formatStarNumber(v: number) {
+  if (v < 1000) {
+    return v;
+  }
+  return Math.round(v / 100) / 10;
+}
+
 /* 将 时间戳 转换成 "Jul 23" 的格式 **/
 export function formatDate(time: number): string {
   const date = new Date(time * 1000);
